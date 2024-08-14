@@ -3,8 +3,8 @@ Vue.component('faq_accordion_1723628783', {
     <div>
       <section class="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8 bg-white">
         <div class="space-y-3 text-center">
-          <h1 class="text-4xl text-gray-800 font-semibold pt-10">FAQ_TITLE_PLACEHOLDER_TEXT</h1>
-          <p class="text-gray-600 max-w-lg mx-auto text-lg">FAQ_SUBTITLE_PLACEHOLDER_TEXT</p>
+          <h1 class="text-4xl text-gray-800 font-semibold pt-10">Building Mobile Apps Made Easy</h1>
+          <p class="text-gray-600 max-w-lg mx-auto text-lg">Common questions about our app development platform</p>
         </div>
         <div class="mt-14 max-w-2xl mx-auto">
           <div v-for="(item, index) in faqs" :key="index" class="space-y-5 mt-5 overflow-hidden border-b border-gray-200 hover:bg-gray-50 cursor-pointer" @click="toggleFaq(index)">
@@ -30,24 +30,24 @@ Vue.component('faq_accordion_1723628783', {
       selectedFaq: null,
       faqs: [
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_1",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_1"
+          q: "What kind of apps can I build?",
+          a: "Our platform supports building native iOS and Android apps for any use case - productivity, social, gaming, utilities and more."
         },
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_2",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_2"
+          q: "How long does it take to build an app?",
+          a: "Development timelines vary based on complexity, but most basic apps can be built and published within a few weeks using our tools."
         },
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_3",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_3"
+          q: "Do I need coding experience?",
+          a: "No coding skills are required. Our visual app builder and intuitive interface allow anyone to create apps easily."
         },
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_4",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_4"
+          q: "How much does it cost?",
+          a: "We offer flexible pricing plans starting with a free tier to get started. Paid plans start at $19/month for basic apps."
         },
         {
-          q: "FAQ_PLACEHOLDER_QUESTION_TEXT_5",
-          a: "FAQ_PLACEHOLDER_ANSWER_TEXT_5"
+          q: "Can I monetize my app?",
+          a: "Yes, you can monetize your apps through in-app purchases, subscriptions, ads and more using our integrated monetization tools."
         }
       ]
     }
