@@ -1,13 +1,15 @@
 {
-    "id": "faq_accordion-5c890225-6440-d34d-64eb-d2cd2a917b12",
+    "id": "faq_accordion_1723628783",
     "name": "faq_accordion",
     "type": "containerComponent",
-    "metadata": {},
+    "metadata": {
+        "markdownText": "Vue.component('faq_accordion_1723628783', {\n  template: `\n    <div>\n      <section class=\"leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8 bg-white\">\n        <div class=\"space-y-3 text-center\">\n          <h1 class=\"text-4xl text-gray-800 font-semibold pt-10\">Building Mobile Apps Made Easy</h1>\n          <p class=\"text-gray-600 max-w-lg mx-auto text-lg\">Common questions about our app development platform</p>\n        </div>\n        <div class=\"mt-14 max-w-2xl mx-auto\">\n          <div v-for=\"(item, index) in faqs\" :key=\"index\" class=\"space-y-5 mt-5 overflow-hidden border-b border-gray-200 hover:bg-gray-50 cursor-pointer\" @click=\"toggleFaq(index)\">\n            <h4 class=\"cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium\">\n              { item.q }\n              <svg v-if=\"selectedFaq === index\" xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-gray-500 ml-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M20 12H4\"/></svg>\n              <svg v-else xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-gray-500 ml-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 4v16m8-8H4\"/></svg>\n            </h4>\n            <div v-show=\"selectedFaq === index\" style=\"overflow: hidden; transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;\" :style=\"{ maxHeight: selectedFaq === index ? '1000px' : '0px', opacity: selectedFaq === index ? 1 : 0 }\">\n              <div class=\"px-4 py-6\">\n                <p class=\"text-gray-700 pb-4 max-w-full text-lg\">{ item.a }</p>\n              </div>\n            </div>\n            <br/><br/>\n          </div>\n        </div>\n      </section>\n    </div>\n  `,\n  delimiters: ['{', '}'],\n  data() {\n    return {\n      selectedFaq: null,\n      faqs: [\n        {\n          q: \"What kind of apps can I build?\",\n          a: \"Our platform supports building native iOS and Android apps for any use case - productivity, social, gaming, utilities and more.\"\n        },\n        {\n          q: \"How long does it take to build an app?\",\n          a: \"Development timelines vary based on complexity, but most basic apps can be built and published within a few weeks using our tools.\"\n        },\n        {\n          q: \"Do I need coding experience?\",\n          a: \"No coding skills are required. Our visual app builder and intuitive interface allow anyone to create apps easily.\"\n        },\n        {\n          q: \"How much does it cost?\",\n          a: \"We offer flexible pricing plans starting with a free tier to get started. Paid plans start at $19/month for basic apps.\"\n        },\n        {\n          q: \"Can I monetize my app?\",\n          a: \"Yes, you can monetize your apps through in-app purchases, subscriptions, ads and more using our integrated monetization tools.\"\n        }\n      ]\n    }\n  },\n  methods: {\n    toggleFaq(index) {\n      this.selectedFaq = this.selectedFaq === index ? null : index;\n    }\n  }\n});"
+    },
     "w": 7,
     "h": 7,
-    "x": "50",
-    "y": "50",
-    "i": "__dropping-elem__",
+    "x": 5,
+    "y": 32,
+    "i": "4",
     "minW": 3,
     "maxW": 12,
     "minH": 1,
